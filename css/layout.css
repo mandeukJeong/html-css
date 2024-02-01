@@ -1,0 +1,44 @@
+.container {
+    width: 100vw;
+}
+
+.content {
+    width: 70%;
+    float: left;
+}
+
+.profile-image {
+    width: 10%;
+    float: left;
+}
+
+.profile-image img {
+    width: 100%;
+}
+
+.profile-info {
+    width: 80%;
+    float: left
+}
+
+.text {
+    padding-top: 10px;
+    clear: both;
+}
+
+.text p {
+    color: gray;
+    font-weight: 700;
+}
+
+.image-wrap {
+    width: 30%;
+    float: left;
+}
+
+.image-wrap img {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
