@@ -30,13 +30,12 @@
     width: 150px;
 }
 
-.sub-content {
-    padding: 10px;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+.explain-box {
+    width: 700px;
+    margin: auto;
+    padding: 20px;
     text-align: center;
-    background: lightgrey;
+    background-color: #eee;
     position: relative;
-    bottom: 50px;
+    top: -40px;
 }
