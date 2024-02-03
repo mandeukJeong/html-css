@@ -6,6 +6,9 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 1px;
+    color: white;
+    text-align: center;
+    position: relative;
 }
 
 .main-title {
@@ -14,18 +17,26 @@
     margin-top: 100px;
 }
 
-.main-background p {
-    color: white;
-    font-size: 18px;
-    font-weight: 700;
-    margin-left: 30px;
-}
-
-.main-background button {
+.main-button {
+    padding: 15px;
+    font-size: 20px;
+    background: white;
     border: none;
     border-radius: 5px;
-    background: white;
-    padding: 10px 20px;
-    margin-left: 30px;
-    margin-top: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 150px;
+}
+
+.sub-content {
+    padding: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background: lightgrey;
+    position: relative;
+    bottom: 50px;
 }
