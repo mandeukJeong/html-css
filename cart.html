@@ -8,26 +8,63 @@
 </head>
 
 <body>
-    <div>
-        <table>
-            <thead>
-                <tr>
-                    <th>
-                        <p>dddd</p>
-                        <p>dddd</p>
-                    </th>
-                    <td style="vertical-align: top;">2222</td>
-                    <td>3333</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>1</th>
-                    <td>2</td>
-                    <td>3</td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="container">
+        <h4 class="main-title">Your shopping cart</h4>
+        <div class="content">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">ITEM</th>
+                        <th>AMOUNT</th>
+                        <th>PRICE</th>
+                        <th>TOTAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="sony.jpeg"></td>
+                        <td class="item">
+                            <h4>SONY</h4>
+                            <p>FE 70-200 mm F2.8 GM OSS</p>
+                        </td>
+                        <td align="right">
+                            <p>1</p>
+                        </td>
+                        <td align="center">
+                            <p>€ 1979.00</p>
+                        </td>
+                        <td align="center" class="total">
+                            <p>€ 1979.00</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="sony_sonnar.jpeg"></td>
+                        <td class="item">
+                            <h4>SONY</h4>
+                            <p>Sonnar T* E 24mm F1.8 ZA</p>
+                        </td>
+                        <td align="right">
+                            <p>1</p>
+                        </td>
+                        <td align="center">
+                            <p>€ 989.00</p>
+                        </td>
+                        <td align="center" class="total">
+                            <p>€ 989.00</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" class="total sum" align="right">
+                            <p>€ 2968.00</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <a href="#">Edit your shopping cart</a>
+            <button>Choose payment method</button>
+        </div>
     </div>
 </body>
 
