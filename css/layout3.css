@@ -1,9 +1,24 @@
+@font-face {
+    font-family: 'NanumSquareAcB';
+    src: url(../font/NanumSquareAcB.woff);
+}
+
 div {
     box-sizing: border-box;
 }
 
 body {
     margin: 0px;
+    font-family: 'gulim';
+}
+
+p,
+h4,
+h3,
+h2,
+h1,
+span {
+    transform: rotate(0.03deg);
 }
 
 .main-background {
