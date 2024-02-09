@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .content {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .content {
+        width: 100%;
+    }
+}
