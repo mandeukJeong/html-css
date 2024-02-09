@@ -81,3 +81,19 @@ input[type=text] {
     border: 1px solid black;
     border-radius: 5px;
 }
+
+@media screen and (max-width: 1200px) {
+    .main-title {
+        font-size: 30px;
+    }
+
+    .nav-item {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-title {
+        font-size: 20px;
+    }
+}
