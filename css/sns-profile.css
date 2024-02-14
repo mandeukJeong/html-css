@@ -1,0 +1,30 @@
+.main-wrap {
+    background-color: #f7f9fc;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.address,
+.progress-text,
+.water,
+.join {
+    color: #6fbaf8;
+}
+
+.default-color {
+    background-color: #6fbaf8;
+}
+
+.contact {
+    border: none;
+}
+
+.skills {
+    background-color: white;
+    color: black;
+    border: 1px solid grey;
+}
+
+.water {
+    font-size: 5rem;
+}
