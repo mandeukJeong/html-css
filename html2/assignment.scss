@@ -1,0 +1,98 @@
+@use '_reset';
+
+$grey-color: #DDDDDD;
+$blue-color: #0C70F2;
+$white-color: #FFFFFF;
+
+@mixin grey-border($element) {
+    #{$element}: 1px solid $grey-color;
+}
+
+@mixin flex-box($width, $gap, $align) {
+    width: $width;
+    padding: 50px;
+    gap: $gap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: $align;
+}
+
+@mixin alert-div($background, $color) {
+    width: 100%;
+    padding: 20px;
+    background-color: $background;
+    color: $color;
+    border: 1px solid $background;
+    border-radius: 5px;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+@mixin col-div($width) {
+    background-color: #E6E6FA;
+    border: 1px solid #D8BFD8;
+    width: (100% / 12 * $width);
+    padding: 20px;
+}
+
+.main-wrap {
+    @include flex-box(100%, 50px, center);
+}
+
+ul {
+    width: 50%;
+    @include grey-border(border);
+
+    li {
+        background-color: $white-color;
+        transition: all 0.5s;
+        padding: 20px;
+        @include grey-border(border-bottom);
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &:hover {
+            background-color: $blue-color;
+            color: $white-color;
+        }
+    }
+}
+
+.alert-wrap {
+    @include flex-box(80%, 30px, flex-start);
+}
+
+.alert-green {
+    @include alert-div(#F0FFF0, #008000)
+}
+
+.alert-blue {
+    @include alert-div(#F0F8FF, #364369)
+}
+
+.alert-yellow {
+    @include alert-div(#FAFAD2, #D2B48C)
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%
+}
+
+.col-4 {
+    @include col-div(4);
+}
+
+.col-6 {
+    @include col-div(6);
+}
+
+.col-2 {
+    @include col-div(2);
+}
