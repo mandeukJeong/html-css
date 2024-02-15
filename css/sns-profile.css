@@ -28,3 +28,17 @@
 .water {
     font-size: 5rem;
 }
+
+.seperate-border {
+    border-left: 1px solid #DDDDDD;
+}
+
+.seperate-bottom {
+    border-bottom: 1px solid #DDDDDD;
+}
+
+@media screen and (max-width: 768px) {
+    .seperate-border {
+        border: none;
+    }
+}
