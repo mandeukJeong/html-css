@@ -1,9 +1,43 @@
+.btn-blue, .btn-red, .btn-green {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+
+.div-blue, .div-red, .div-green {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+
+.div-green {
+  background-color: green;
+}
+
+.div-red {
+  background-color: red;
+}
+
+.div-blue {
+  background-color: blue;
+}
+
+.btn-green {
+  color: green;
+}
+
+.btn-red {
+  color: red;
+}
+
+.btn-blue {
+  color: blue;
+}
+
 .background {
   background-color: #2a4cb2;
-  font-size: 14px;
 }
 
 .box {
-  color: #2a4cb2;
-  font-size: 18px;
+  color: #eeeeee;
 }/*# sourceMappingURL=test.css.map */
