@@ -1,65 +1,21 @@
-%btn {
-    width: 100px;
-    height: 100px;
-    padding: 20px;
+@use '_reset';
+
+@mixin font-style($구멍) {
+    font-size: $구멍;
+    // #{$구멍}: 1px;
+    letter-spacing: -1px;
 }
 
-%div {
-    width: 200px;
-    height: 200px;
-    padding: 20px;
+h2 {
+    @include font-style(40px);
+    color: reset.$main-color;
 }
 
-.div-green {
-    @extend %div;
-    background-color: green
+h3 {
+    @include font-style(30px)
 }
 
-.div-red {
-    @extend %div;
-    background-color: red
-}
-
-.div-blue {
-    @extend %div;
-    background-color: blue
-}
-
-.btn-green {
-    @extend %btn;
-    color: green;
-}
-
-.btn-red {
-    @extend %btn;
-    color: red;
-}
-
-.btn-blue {
-    @extend %btn;
-    color: blue;
-}
-
-// .main-bg {
-//     width: 100px;
-
-//     h4 {
-//         font-size: 16px;
-//     }
-
-//     button {
-//         color: red;
-//     }
-// }
-
-$main-color: #2a4cb2;
-$sub-color: #eeeeee;
-$basic-size: 20px;
-
-.background {
-    background-color: $main-color;
-}
-
-.box {
-    color: $sub-color;
+h4 {
+    font-size: 10px;
+    letter-spacing: -1px;
 }
