@@ -35,6 +35,42 @@
         </div>
     </div>
 
+    <progress value="0.5"></progress>
+    <input type="range">
+
+    <style>
+        progress {
+            appearance: none;
+        }
+
+        progress::-webkit-progress-value {
+            background-color: red;
+        }
+
+        input[type=range] {
+            appearance: none;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+            appearance: none;
+            background: red;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+
+    <!-- <style>
+        input::-webkit-input-placeholder {
+            color: red;
+        }
+    </style> -->
+    <!-- <style>
+        input[type=file]::-webkit-file-upload-button {
+            background: skyblue;
+            border: none;
+        }
+    </style> -->
+
     <div class="shop-bg">
         <div class="shop-container">
             <div class="shop-item">
