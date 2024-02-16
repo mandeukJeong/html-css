@@ -1,0 +1,315 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.main-wrap {
+  width: 100%;
+  background-color: #eeeeee;
+  padding-left: 60px;
+}
+
+nav {
+  width: 150px;
+  height: 100%;
+  background-color: #603fef;
+  position: fixed;
+  z-index: 5;
+  padding: 30px 20px;
+  color: white;
+  transform: translateX(-130px);
+  transition: all 0.5s;
+}
+nav:hover {
+  transform: translateX(0px);
+}
+nav:hover i {
+  transform: translateX(0px);
+}
+nav div {
+  margin-bottom: 30px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 20px;
+}
+nav i {
+  transform: translateX(130px);
+}
+
+header {
+  background-color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 5px 5px -2px lightgray;
+}
+header div:first-child {
+  display: flex;
+}
+header div:first-child input {
+  width: 150px;
+  border: 1px solid #eeeeee;
+  padding: 8px;
+  border-radius: 5px 0 0 5px;
+  transition: all 1s;
+}
+header div:first-child input:focus {
+  width: 200px;
+}
+header div:first-child button {
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  padding: 8px 12px;
+}
+header div:last-child {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  color: gray;
+  gap: 20px;
+}
+
+main {
+  padding: 30px 10px;
+}
+main h1 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.card-wrap {
+  margin: 30px 0;
+  display: flex;
+  gap: 20px;
+}
+.card-wrap > div {
+  width: 25%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px 5px 5px lightgray;
+}
+.card-wrap > div div {
+  font-size: 18px;
+}
+.card-wrap i {
+  font-size: 30px;
+  color: gray;
+}
+.card-wrap h4 {
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.card-blue {
+  border-left: 3px solid #82caff;
+}
+
+.card-green {
+  border-left: 3px solid #03c04a;
+}
+
+.card-purple {
+  border-left: 3px solid #603fef;
+}
+
+.card-yellow {
+  border-left: 3px solid #ffd800;
+}
+
+.sub-wrap {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  width: 100%;
+}
+.sub-wrap div {
+  background-color: white;
+  box-shadow: 5px 5px 5px lightgray;
+  border-radius: 10px;
+}
+.sub-wrap div:first-child {
+  width: 66.6666666667%;
+}
+.sub-wrap div:last-child {
+  width: 33.3333333333%;
+}
+.sub-wrap div h1 {
+  background-color: #eeeeee;
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+canvas {
+  padding: 20px;
+}
+
+li {
+  padding: 20px;
+  border: 1px solid #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+li span {
+  font-size: 13px;
+  background-color: #1e90ff;
+  color: white;
+  border-radius: 50px;
+  padding: 5px 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-wrap {
+    flex-wrap: wrap;
+  }
+  .card-wrap > div {
+    width: 100%;
+  }
+  .sub-wrap {
+    flex-wrap: wrap;
+  }
+  .sub-wrap div:first-child {
+    width: 100%;
+  }
+  .sub-wrap div:last-child {
+    width: 100%;
+  }
+}/*# sourceMappingURL=admin.css.map */

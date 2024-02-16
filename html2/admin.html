@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="admin.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <i class="fas fa-home"></i>
+            <a href="#">Home</a>
+        </div>
+        <div>
+            <i class="fas fa-headphones"></i>
+            <a href="#">Services</a>
+        </div>
+        <div>
+            <i class="fas fa-flag"></i>
+            <a href="#">Alerts</a>
+        </div>
+        <div>
+            <i class="fas fa-chart-pie"></i>
+            <a href="#">Stats</a>
+        </div>
+    </nav>
+    <div class="main-wrap">
+        <header>
+            <div>
+                <input type="text" placeholder="Search">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div>
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-envelope"></i>
+                <p>Minseo Jeong</p>
+            </div>
+        </header>
+        <main>
+            <h1>Dashboard</h1>
+            <div class="card-wrap">
+                <div class="card-blue">
+                    <div>
+                        <h4>Earnings (Monthly)</h4>
+                        <p>$400,000</p>
+                    </div>
+                    <i class="fas fa-calendar"></i>
+                </div>
+                <div class="card-green">
+                    <div>
+                        <h4>Earnings (Annual)</h4>
+                        <p>$800,000</p>
+                    </div>
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="card-purple">
+                    <div>
+                        <h4>Tasks</h4>
+                        <p>13</p>
+                    </div>
+                    <i class="fas fa-tasks"></i>
+                </div>
+                <div class="card-yellow">
+                    <div>
+                        <h4>Requests</h4>
+                        <p>26</p>
+                    </div>
+                    <i class="fas fa-comments"></i>
+                </div>
+            </div>
+            <div class="sub-wrap">
+                <div>
+                    <h1>Earnings Overview</h1>
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div>
+                    <h1>Tasks</h1>
+                    <ul>
+                        <li>
+                            <p>Borrowed Items</p>
+                            <span>14</span>
+                        </li>
+                        <li>
+                            <p>Trello requests</p>
+                            <span>2</span>
+                        </li>
+                        <li>
+                            <p>Marked Comments</p>
+                            <span>1</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                datasets: [{
+                    label: 'Monthly',
+                    data: [0, 10, 5, 3, 20, 30, 45],
+                    fill: true,
+                    backgroundColor: '#603fef',
+                    borderColor: '#603fef',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
