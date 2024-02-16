@@ -35,41 +35,14 @@
         </div>
     </div>
 
-    <progress value="0.5"></progress>
-    <input type="range">
+    <video controls autoplay muted preload="metadata" poster="apple.jpeg">
+        <source src="video/bridge_m.webm" type="video/mp4">
+        <source src="video/bridge.mp4" type="video/mp4">
+    </video>
 
-    <style>
-        progress {
-            appearance: none;
-        }
-
-        progress::-webkit-progress-value {
-            background-color: red;
-        }
-
-        input[type=range] {
-            appearance: none;
-        }
-
-        input[type=range]::-webkit-slider-thumb {
-            appearance: none;
-            background: red;
-            width: 50px;
-            height: 50px;
-        }
-    </style>
-
-    <!-- <style>
-        input::-webkit-input-placeholder {
-            color: red;
-        }
-    </style> -->
-    <!-- <style>
-        input[type=file]::-webkit-file-upload-button {
-            background: skyblue;
-            border: none;
-        }
-    </style> -->
+    <audio controls mute preload="metadata">
+        <source src="audio/bass.mp3">
+    </audio>
 
     <div class="shop-bg">
         <div class="shop-container">
