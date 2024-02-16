@@ -9,13 +9,11 @@ div {
 .main-wrap {
     padding: 100px;
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 30px;
-    position: relative;
 }
 
 button {
@@ -32,16 +30,57 @@ button:hover {
     animation-duration: 0.5s;
 }
 
-p {
+.plus {
     font-size: 100px;
     font-weight: 400;
     cursor: pointer;
 }
 
-p:hover {
+.plus:hover {
     animation-name: plus-move;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+}
+
+.ani-navbar:hover {
+    transform: translateX(0px);
+    text-align: center;
+}
+
+.ani-navbar {
+    width: 200px;
+    background: black;
+    color: white;
+    height: 100%;
+    padding: 25px;
+    position: fixed;
+    z-index: 5;
+    text-align: right;
+    transition: all 1s;
+    transform: translateX(-150px)
+}
+
+.ani-navbar p {
+    text-align: center;
+}
+
+.ani-navbar:hover p {
+    animation-name: slide;
+    animation-duration: 1s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-250px);
+    }
+
+    50% {
+        transform: translateX(20px) skewX(-30deg);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
 }
 
 @keyframes button-move {
